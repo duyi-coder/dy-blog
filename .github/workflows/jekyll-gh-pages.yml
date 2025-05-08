@@ -39,7 +39,7 @@ jobs:
 
       # 删除冗余的 Jekyll 专用步骤（actions/configure-pages@v4）
       - name: Install dependencies
-        run: pnpm ci
+        run: pnpm install
 
       - name: Build with VitePress
         run: pnpm run docs:build

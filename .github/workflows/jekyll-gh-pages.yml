@@ -39,7 +39,7 @@ jobs:
 
       # 删除冗余的 Jekyll 专用步骤（actions/configure-pages@v4）
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile  # 严格依赖锁文件
+        run: pnpm ci
 
       - name: Build with VitePress
         run: pnpm run docs:build
